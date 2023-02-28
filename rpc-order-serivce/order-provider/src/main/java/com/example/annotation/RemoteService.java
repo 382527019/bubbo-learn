@@ -13,7 +13,7 @@ import java.lang.annotation.Target;
  * Date:2022/11/27
  * Time:21:54
  */
-@Target(ElementType.TYPE)
+@Target(ElementType.TYPE)//注解范围
 @Retention(RetentionPolicy.RUNTIME)//运行时用
 @Component
 public @interface RemoteService {
