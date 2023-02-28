@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/rpc-order-serivce/order-api/order-api.iml" filepath="$PROJECT_DIR$/rpc-order-serivce/order-api/order-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rpc-order-serivce/order-provider/order-provider.iml" filepath="$PROJECT_DIR$/rpc-order-serivce/order-provider/order-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rpc-order-serivce/rpc-order-serivce.iml" filepath="$PROJECT_DIR$/rpc-order-serivce/rpc-order-serivce.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rpc-user-service/rpc-user-service.iml" filepath="$PROJECT_DIR$/rpc-user-service/rpc-user-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/socket.iml" filepath="$PROJECT_DIR$/.idea/socket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/socket-client-demo/socket-client-demo.iml" filepath="$PROJECT_DIR$/socket-client-demo/socket-client-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/socket-server-demo/socket-demo.iml" filepath="$PROJECT_DIR$/socket-server-demo/socket-demo.iml" />
+    </modules>
+  </component>
+</project>
