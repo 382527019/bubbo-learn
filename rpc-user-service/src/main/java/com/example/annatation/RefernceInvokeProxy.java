@@ -15,9 +15,11 @@ import java.lang.reflect.Proxy;
  * Date:2022/11/27
  * Time:23:34
  */
+//BeanPostProcessor 后置处理器
 @Component
 public class RefernceInvokeProxy implements BeanPostProcessor {
 
+    /** 路由处理器*/
     @Autowired
     RemoteInvocationHandler remoteInvocationHandler;
 
@@ -25,11 +27,13 @@ public class RefernceInvokeProxy implements BeanPostProcessor {
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
         Field[] declaredFields = bean.getClass().getDeclaredFields();
         for (Field field : declaredFields) {
-            if (field.isAnnotationPresent(Refernce.class)) {//对@Refernce注解设置代理
+            //扫描注解，对@Refernce注解设置代理 Proxy.newProxyInstance
+            if (field.isAnnotationPresent(Refernce.class)) {
                Object proxy= Proxy.newProxyInstance(field.getType().getClassLoader(), new Class<?>[]{field.getType()}, remoteInvocationHandler);
                 field.setAccessible(true);
                 try {
-                    field.set(bean,proxy);//对加@Refernce注解设置代理，实现inovcationHandler
+                    //对加@Refernce注解设置代理，实现inovcationHandler
+                    field.set(bean,proxy);
                 } catch (IllegalAccessException e) {
                     e.printStackTrace();
                 }
