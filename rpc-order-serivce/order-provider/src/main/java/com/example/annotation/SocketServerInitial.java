@@ -1,7 +1,6 @@
 package com.example.annotation;
 
 import com.example.handler.AnnotationProcessorHandler;
-import com.example.handler.ProcessorHandler;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
